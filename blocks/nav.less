@@ -1,0 +1,36 @@
+// main: ../style.less
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__item {
+    padding: 2rem 3rem;
+    border: 1px solid @gray;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: @white;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: #6bcef5;
+    }
+
+    &::after {
+      transition: all 0.2s ease;
+      content: "";
+      display: block;
+      background: #6bcef5;
+      width: 0%;
+      height: 2px;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}

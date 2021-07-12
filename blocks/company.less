@@ -1,0 +1,85 @@
+// main: ../style.less
+
+.company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.company__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #040848;
+}
+
+.company__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.company__title {
+  margin: 8rem 0 8rem 0;
+  border-bottom: 4px solid #fff;
+}
+
+.company__title-text {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #fff;
+  font-family: "Gilroy-Light";
+  letter-spacing: 0.3rem;
+}
+
+.company__intro-title {
+  color: #6bcef5;
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 1.3;
+  margin-bottom: 4rem;
+  opacity: 0;
+}
+
+.company__intro-text {
+    text-align: center;
+    color: #fff;
+    font-family: "Gilroy-Light";
+    padding: 0 17rem;
+}
+
+.company__intro-text-margin:not(:last-child) {
+    margin-bottom: 0.4rem;
+}
+
+.company__logo {
+ position: relative;
+ background: #040848;
+ height: 450px;
+ bottom: 0;
+
+ &-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+ }
+
+ &-item {
+   position: relative;
+   width: 382px;
+   height: 485px;
+   margin: 0 2rem;
+   z-index: 1000;
+ }
+}
+
+.company__logo-center {
+  width: 420px;
+  height: 540px;
+}

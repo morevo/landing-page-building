@@ -1,0 +1,68 @@
+// main: ../style.less
+
+.header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.container {
+  width: 1440px;
+  max-width: 100%;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: fade(#040848, 90%);
+  border-bottom: 1px solid @gray;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid @gray;
+  border-top: 1px solid @gray;
+}
+
+.header__img {
+  padding: 0 3rem;
+}
+
+.header__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-left: 1px solid @gray;
+  border-top: 1px solid @gray;
+}
+
+.header__number {
+  transition: all 0.2s ease;
+  font-family: "Gilroy-Light";
+  color: @white;
+  letter-spacing: 0.2rem;
+  font-weight: 200;
+  cursor: pointer;
+
+  &:hover {
+    color: #6bcef5;
+  }
+
+  &::after {
+    transition: all 0.3s ease;
+    content: "";
+    display: block;
+    background: #6bcef5;
+    width: 0%;
+    height: 3px;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
