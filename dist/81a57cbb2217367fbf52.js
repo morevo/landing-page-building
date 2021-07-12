@@ -1,3 +1,5 @@
+import '../style.less';
+
 let navFirst = document.querySelector(".nav__link-first");
 let navSecond = document.querySelector(".nav__link-second");
 let arrow = document.querySelector(".arrow__link");

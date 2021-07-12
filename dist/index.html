@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!-- 13:30 -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fa4ee4885593722b8290.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Landing page</title>
+  <script defer src="bundle.js"></script></head>
+  <body>
+    <svg style="display: none">
+      <symbol id="arrow" viewBox="0 0 36 22">
+        <path
+          d="M2 2L18.3137 19L34 2"
+          fill="none"
+          stroke-width="3"
+          stroke="#6BCEF5"
+        />
+      </symbol>
+
+      <symbol id="left-logo" viewBox="0 0 382 406">
+        <path
+          d="M0 0.931641H100.732V124.381C108.607 124.799 114.92 125.357 120.95 125.357C156.916 125.357 192.881 125.357 228.847 125.357C286.91 125.706 328.693 154.502 354.55 202.718C393.779 275.93 390.657 350.013 347.137 420.855C321.102 463.213 283.292 487.791 230.337 487.094C160.782 486.048 91.1912 486.815 21.6007 486.815H0V0.931641ZM102.258 406.596C136.769 406.596 169.649 408.13 202.316 405.794C214.553 404.922 227.889 397.113 237.785 388.885C271.516 360.333 280.065 322.158 270.736 281.403C262.791 246.54 244.312 214.745 205.65 208.644C172.238 203.38 137.266 207.564 102.435 207.564L102.258 406.596Z"
+          fill="#F7F7F7"
+        />
+      </symbol>
+
+      <symbol id="center-logo" viewBox="0 0 495 406">
+        <path
+          d="M2.01869 0.931641H127.336V21.6511C127.336 117.1 127.159 212.549 127.69 307.963C127.903 345.78 145.122 375.275 181.58 388.821C204.224 397.548 228.397 401.8 252.715 401.334C277.034 400.868 301.02 395.693 323.301 386.105C350.618 374.683 363.833 352.257 367.411 324.712C370.029 303.01 371.283 281.17 371.167 259.316C371.592 180.651 371.167 101.987 371.167 23.3226V1.55845H494.89V21.0939C494.89 120.025 495.138 218.921 494.89 317.852C494.571 413.58 445.642 463.69 353.169 478.211C302.043 486.22 249.074 487.334 197.275 485.175C140.126 482.842 85.4571 466.475 41.8778 427.3C17.5372 405.431 1.27466 376.18 0.814069 343.726C-0.744865 231.527 0.388899 119.294 0.53062 7.09525C0.840714 5.0016 1.33867 2.93902 2.01869 0.931641Z"
+          fill="#F7F7F7"
+        />
+      </symbol>
+
+      <symbol id="right-logo" viewBox="0 0 381 405">
+        <path
+          d="M381 0.900391V485.535H359.824C291.777 485.535 223.66 483.863 155.649 486.023C99.9911 487.835 62.121 460.764 35.0154 418.084C-3.52542 357.74 -11.1842 291.019 16.6979 225.345C42.8153 163.189 88.3442 125.7 162.814 124.306C201.99 123.644 241.201 124.306 282.354 124.306V0.900391H381ZM281.613 405.611V204.44C249.566 204.44 219.037 202.594 188.825 204.998C176.932 205.733 165.375 209.187 155.066 215.089C144.757 220.99 135.98 229.177 129.426 239.002C119.566 252.435 112.804 267.836 109.615 284.123C106.426 300.41 106.888 317.189 110.967 333.281C119.65 370.944 150.038 403.694 181.555 405.402C214.272 406.97 247.096 405.611 281.613 405.611Z"
+          fill="#F7F7F7"
+        />
+      </symbol>
+
+      <symbol id="metro" viewBox="0 0 93.708 93.708">
+        <g>
+          <polygon
+            points="77.32,8.732 47.379,51.248 16.795,9.721 0,79.253 22.728,79.253 26.892,57.015 47.009,84.976 67.021,57.628 
+		71.047,79.376 93.708,79.376 	"
+          />
+        </g>
+      </symbol>
+    </svg>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <img class="header__img" src="b13cd3f73b91d38887f8.png" alt="Logo" />
+          </div>
+
+          <nav class="nav">
+            <div class="nav__item">
+              <a class="nav__link nav__link-first" href="#">Об'єкти</a>
+            </div>
+            <div class="nav__item">
+              <a class="nav__link nav__link-second" href="#">Про компанію</a>
+            </div>
+            <div class="nav__item">
+              <a class="nav__link" href="#">Переваги</a>
+            </div>
+            <div class="nav__item">
+              <a class="nav__link" href="#">Контакти</a>
+            </div>
+          </nav>
+          <div class="header__contact">
+            <p class="header__number">+38(044) 379 45 92</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="intro">
+      <div class="container">
+        <div class="about">
+          <div class="about__company">
+            <img src="ac21ee23dbdca7abe948.png" alt="Intro" />
+          </div>
+
+          <a class="arrow__link" href="#">
+            <div class="arrow__down">
+              <svg class="arrow__item">
+                <use class="arrow__icon" xlink:href="#arrow"></use>
+              </svg>
+            </div>
+          </a>
+          <div class="about__background">
+            <img src="c9c2f17b6a8c46eab5e6.png" alt="Dots" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="container">
+        <div class="main__inner">
+          <div class="main__title">
+            <h1 class="main__title-text">Об'єкти</h1>
+          </div>
+
+          <nav class="main__nav">
+            <div class="main__nav-item">
+              <a href="#" class="main__link" data-filter="all">Всі</a>
+            </div>
+
+            <div class="main__nav-item">
+              <a href="#" class="main__link" data-filter="build">Будуються</a>
+            </div>
+
+            <div class="main__nav-item">
+              <a href="#" class="main__link" data-filter="active">Введені</a>
+            </div>
+          </nav>
+        </div>
+
+        <div class="main__items">
+          <div class="main__item main__item-first" data-item="build">
+            <div class="main__item-inner">
+              <img
+                class="main__item-img-first"
+                src="7853975375a511fdbf12.png"
+                alt="Arsenal Hause"
+              />
+              <div class="main__metro">
+                <div class="main__metro-symbol">
+                  <svg class="main__metro-img">
+                    <use class="main__metro-icon" xlink:href="#metro"></use>
+                  </svg>
+                </div>
+                <div class="about__metro">
+                  <h3 class="metro__title">
+                    <span class="metro__title-first">Арсенальна</span> <br />
+                    <span class="metro__text">вул.Московська, 7</span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="metro__title-after">
+              <h1 class="metro__title-text">Arsenal House</h1>
+            </div>
+          </div>
+
+          <div class="main__item main__item-second" data-item="build">
+            <div class="main__item-inner">
+              <img
+                class="main__item-img-first main__item-img-second"
+                src="d8b36a2f4c25ccfd220b.png"
+                alt="Salut"
+              />
+              <div class="main__metro-second">
+                <div class="main__metro-symbol">
+                  <svg class="main__metro-img">
+                    <use class="main__metro-icon" xlink:href="#metro"></use>
+                  </svg>
+                </div>
+                <div class="about__metro">
+                  <h3 class="metro__title">
+                    <span class="metro__title-second">Либідська</span> <br />
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="metro__title-after-second">
+              <h1 class="metro__title-text">Salut!</h1>
+            </div>
+          </div>
+
+          <div class="main__item main__item-third" data-item="active">
+            <div class="main__item-inner">
+              <img
+                class="main__item-img-first main__item-img-third"
+                src="f6908be75ec2314c16a2.png"
+                alt="Victory V"
+              />
+              <div class="main__metro-third">
+                <div class="main__metro-symbol">
+                  <svg class="main__metro-img">
+                    <use class="main__metro-icon" xlink:href="#metro"></use>
+                  </svg>
+                </div>
+                <div class="about__metro">
+                  <h3 class="metro__title">
+                    <span class="metro__title-third">Університет</span> <br />
+                    <span class="metro__text">пр. Перемоги, 5-В</span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="metro__title-after-third">
+              <h1 class="metro__title-text">Victory V</h1>
+            </div>
+          </div>
+
+          <div class="main__item main__item-fougth" data-item="active">
+            <div class="main__item-inner">
+              <img
+                class="main__item-img-first main__item-img-fourth"
+                src="3c45e76710c8089b96ed.png"
+                alt="Повітрофлотський Квартал"
+              />
+              <div class="main__metro-fourth">
+                <div class="main__metro-symbol">
+                  <svg class="main__metro-img">
+                    <use class="main__metro-icon" xlink:href="#metro"></use>
+                  </svg>
+                </div>
+                <div class="about__metro">
+                  <h3 class="metro__title">
+                    <span class="metro__title-fougth"
+                      >Політехнічний інститут</span
+                    >
+                    <br />
+                    <span class="metro__text">вул.Шолуденка, 1 А</span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="metro__title-after-fought">
+              <h1 class="metro__title-text">Повітрофлотський Квартал</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="company">
+      <div class="container">
+        <div class="company__inner">
+          <div class="company__title">
+            <h1 class="company__title-text">Про компанію</h1>
+          </div>
+
+          <div class="company__intro">
+            <h2 class="company__intro-title">
+              Нерухомість сьогодні - це вже <br />
+              не просто бетон, сталь і скло.
+            </h2>
+
+            <div class="company__intro-text">
+              <p class="company__intro-text-margin">
+                Насамперед це ідея та її професійне втілення. В основу ідеї
+                покладено власний досвід, сучасні технології та нові сміливі
+                рішення. Саме такі проекти стають «знаковими» та мають попит на
+                ринку в довгостроковій перспективі.
+              </p>
+
+              <p class="company__intro-text-margin">
+                Компанія «bUd development» створена командою професіоналів у
+                галузі житлового будівництва. Головна мета команди - створення
+                особливих проектів, які відповідають сучасним потребам ринку та
+                поєднують у собі продуману концепцію забудови та інфраструктури.
+              </p>
+
+              <p class="company__intro-text-margin">
+                Діяльність компанії «bUd development» орієнтована на пошук та
+                впровадження сучасних й ефективних рішень у сфері нерухомості.
+              </p>
+            </div>
+            <div class="company__logo">
+              <svg class="company__logo-item">
+                <use class="company__logo-icon" xlink:href="#left-logo"></use>
+              </svg>
+              <svg class="company__logo-item company__logo-center">
+                <use class="company__logo-icon" xlink:href="#center-logo"></use>
+              </svg>
+              <svg class="company__logo-item">
+                <use class="company__logo-icon" xlink:href="#right-logo"></use>
+              </svg>
+              <img class="company__logo-img" src="1d278c0bae2c6ff839cc.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="81a57cbb2217367fbf52.js"></script>
+  </body>
+</html>
