@@ -1,4 +1,4 @@
-import '../style.less';
+import "../style.less";
 
 let navFirst = document.querySelector(".nav__link-first");
 let navSecond = document.querySelector(".nav__link-second");
@@ -67,9 +67,40 @@ $(() => {
 
 
 window.addEventListener("scroll", () => {
-    if(pageYOffset >= 2800 ) {
+  console.log(pageYOffset)
+    if(pageYOffset >= 2700 ) {
       $(".company__intro-title").addClass("animate__animated animate__fadeInDown animate__delay-.6s");
       $(".company__intro-title").css("opacity", "1")
+    } if(pageYOffset <= 2600) {
+      $(".company__intro-title").removeClass("animate__animated animate__fadeInDown animate__delay-.6s");
+      $(".company__intro-title").css("opacity", "0")
+    }
+
+    if(pageYOffset >= 630) {
+      $(".main__item-first").addClass("animate__animated animate__fadeInLeft animate__delay-.6s");
+      $(".main__item-second").addClass("animate__animated animate__fadeInRight animate__delay-.6s");
+      $(".main__item-first").css("opacity", "1");
+      $(".main__item-second").css("opacity", "1");
+    }
+    if(pageYOffset <= 320) {
+      $(".main__item-first").removeClass("animate__animated animate__fadeInLeft animate__delay-.6s");
+      $(".main__item-second").removeClass("animate__animated animate__fadeInRight animate__delay-.6s");
+      $(".main__item-first").css("opacity", "0")
+      $(".main__item-second").css("opacity", "0")
+    }
+
+    if(pageYOffset >= 1640) {
+      $(".main__item-third").addClass("animate__animated animate__fadeInLeft animate__delay-.6s");
+      $(".main__item-fougth").addClass("animate__animated animate__fadeInRight animate__delay-.6s");
+      $(".main__item-third").css("opacity", "1");
+      $(".main__item-fougth").css("opacity", "1");
+    }
+
+    if(pageYOffset <= 1300) {
+      $(".main__item-third").removeClass("animate__animated animate__fadeInLeft animate__delay-.6s");
+      $(".main__item-fougth").removeClass("animate__animated animate__fadeInRight animate__delay-.6s");
+      $(".main__item-third").css("opacity", "0")
+      $(".main__item-fougth").css("opacity", "0")
     }
 })
 
